@@ -2,6 +2,39 @@
 
 using namespace std;
 
+void nhap(int arr[], int arrSize);
+
+void xuat(const int arr[], int arrSize);
+
+bool tim(const int arr[], int arrSize, int x);
+
+void daonguoc(int arr[], int arrSize);
+
+void xoa(int arr[], int &arrSize, int p);
+
+int main()
+{
+    int arrSize, x, deleteIndex;
+    cout << "Nhap vao kich thuot cua mang: ";
+    cin >> arrSize;
+    int arr[arrSize];
+    nhap(arr, arrSize);
+    xuat(arr, arrSize);
+    cout << "Nhap vao gia tri can tim: ";
+    cin >> x;
+    if (tim(arr, arrSize, x))
+        cout << "Tim thay gia tri " << x << " trong mang!" << endl;
+    else
+        cout << "Khong tim thay gia tri " << x << " trong mang!" << endl;
+    daonguoc(arr, arrSize);
+    cout << "Nhap vao vi tri phan tu can xoa: ";
+    cin >> deleteIndex;
+    xoa(arr, arrSize, deleteIndex);
+    xuat(arr, arrSize);
+
+    return 0;
+}
+
 void nhap(int arr[], int arrSize)
 {
     cout << "Nhap vao gia tri cua mang: ";
@@ -54,27 +87,4 @@ void xoa(int arr[], int &arrSize, int p)
         arr[i] = arr[i + 1];
     --arrSize;
     cout << "Xoa phan tu thu " << p << " thanh cong!" << endl;
-}
-
-int main()
-{
-    int arrSize, x, deleteIndex;
-    cout << "Nhap vao kich thuot cua mang: ";
-    cin >> arrSize;
-    int arr[arrSize];
-    nhap(arr, arrSize);
-    xuat(arr, arrSize);
-    cout << "Nhap vao gia tri can tim: ";
-    cin >> x;
-    if (tim(arr, arrSize, x))
-        cout << "Tim thay gia tri " << x << " trong mang!" << endl;
-    else
-        cout << "Khong tim thay gia tri " << x << " trong mang!" << endl;
-    daonguoc(arr, arrSize);
-    cout << "Nhap vao vi tri phan tu can xoa: ";
-    cin >> deleteIndex;
-    xoa(arr, arrSize, deleteIndex);
-    xuat(arr, arrSize);
-
-    return 0;
 }
