@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.26)
+project(BTH5)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(BTH5_BT01 BTH5_BT01.cpp)
+add_executable(BTH5_BT02 BTH5_BT02.cpp)
+add_executable(BTH5_BT03 BTH5_BT03.cpp)
+add_executable(BTH5_BT04 BTH5_BT04.cpp)
+add_executable(BTH5_BT05 BTH5_BT05.cpp)
+add_executable(BTH5_BT06 BTH5_BT06.cpp)
+add_executable(BTH5_BT07 BTH5_BT07.cpp)
+add_executable(BTH5_BT08 BTH5_BT08.cpp)
+add_executable(BTH5_BT09 BTH5_BT09.cpp)
+add_executable(BTH5_BT10 BTH5_BT10.cpp)
+add_executable(BTH5_BT11 BTH5_BT11.cpp)
+add_executable(BTH5_BT12 BTH5_BT12.cpp)
