@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.26)
+project(BTH4)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(BTH4_BT01 BTH4_BT01.cpp)
+add_executable(BTH4_BT02 BTH4_BT02.cpp)
+add_executable(BTH4_BT03 BTH4_BT03.cpp)
+add_executable(BTH4_BT04 BTH4_BT04.cpp)
+add_executable(BTH4_BT05 BTH4_BT05.cpp)
+add_executable(BTH4_BT06 BTH4_BT06.cpp)
+add_executable(BTH4_BT07 BTH4_BT07.cpp)
+add_executable(BTH4_BT08 BTH4_BT08.cpp)
+add_executable(BTH4_BT09 BTH4_BT09.cpp)
+add_executable(BTH4_BT10 BTH4_BT10.cpp)
+add_executable(BTH4_BT11 BTH4_BT11.cpp)
+add_executable(BTH4_BT12 BTH4_BT12.cpp)
+add_executable(BTH4_BT13 BTH4_BT13.cpp)
