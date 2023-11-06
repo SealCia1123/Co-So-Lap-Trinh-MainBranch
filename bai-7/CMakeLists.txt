@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.26)
+project(BTH7)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(BTH7_BT01 BTH7_BT01.cpp)
+add_executable(BTH7_BT02 BTH7_BT02.cpp)
+add_executable(BTH7_BT03 BTH7_BT03.cpp)
+add_executable(BTH7_BT04 BTH7_BT04.cpp)
+add_executable(BTH7_BT05 BTH7_BT05.cpp)
+add_executable(BTH7_BT06 BTH7_BT06.cpp)
+add_executable(BTH7_BT07 BTH7_BT07.cpp)
+add_executable(BTH7_BT08 BTH7_BT08.cpp)
+add_executable(BTH7_BT09 BTH7_BT09.cpp)
+add_executable(BTH7_BT10 BTH7_BT10.cpp)
