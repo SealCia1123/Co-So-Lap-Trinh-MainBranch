@@ -13,7 +13,7 @@ int main()
         cout << "Nhap vao 2 so nguyen duong n1 va n2 (n2 > n1): ";
         cin >> n1 >> n2;
     } while (n1 > n2);
-   
+
     int i = n1;
     while (i <= n2)
     {
