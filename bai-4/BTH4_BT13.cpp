@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int max = -1e5;
+    int max = -1e8;
     while (!cin.eof())
     {
         int n;
