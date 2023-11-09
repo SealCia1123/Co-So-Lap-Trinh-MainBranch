@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    int n = 2, sumOddNumber = 0, sumEvenNumber = 0;
+    int n, sumOddNumber = 0, sumEvenNumber = 0;
     do
     {
-        if (n <= 1)
-            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 1)" << endl;
         cout << "Nhap vao so nguyen n (n > 1): ";
         cin >> n;
+        if (n <= 1)
+            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 1)" << endl;
     } while (n <= 1);
 
     int number = n;
