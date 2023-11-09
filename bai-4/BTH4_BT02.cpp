@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n = 2, mul = 1;
+    int n = 2, mul = 1, i = 1;
     do
     {
         if (n <= 1)
@@ -15,11 +15,10 @@ int main()
     } while (n <= 1);
 
     int number = n;
-    while (n)
+    while (i <= n)
     {
-        if (n % 2 != 0)
-            mul *= n;
-        n--;
+        mul *= i;
+        i += 2;
     }
     cout << "Tich cua cac so le tu 1 den " << number << ": " << mul << endl;
 
