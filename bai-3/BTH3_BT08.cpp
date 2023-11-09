@@ -50,6 +50,8 @@ int main()
         case 11:
             daysInMonth = 30;
             break;
+        default:
+            cout << "Nhap thang khong hop le!" << endl;
     }
     cout << "So ngay cua thang " << month << " nam " << year << " la " << daysInMonth << endl;
 

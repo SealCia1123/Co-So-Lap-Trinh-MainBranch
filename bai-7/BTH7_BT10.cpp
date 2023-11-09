@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -10,7 +9,7 @@ void swap(int &a, int &b)
     b = temp;
 }
 
-void sortTwoNumberAscend(int &a, int &b)
+void sortTwoNumberDescend(int &a, int &b)
 {
     if (a > b)
         swap(a, b);
@@ -19,7 +18,7 @@ void sortTwoNumberAscend(int &a, int &b)
 int main()
 {
     int a = 2, b = 1;
-    sortTwoNumber(a, b);
+    sortTwoNumberAscend(a, b);
     cout << a << " " << b;
     return 0;
 }

@@ -47,7 +47,7 @@ int daysInMonth(int month, int year)
     return daysInMonth;
 }
 
-int checkDays(int date, int month, int year)
+int countDays(int date, int month, int year)
 {
     int result = 0;
     for (int i = 1; i < month; i++)
@@ -66,9 +66,6 @@ int checkDays(int date, int month, int year)
             case 29:
                 result += 29;
                 break;
-            default:
-                result = 0;
-                break;
         }
     }
     return result + date;
@@ -79,6 +76,6 @@ int main()
     int date, month, year;
     cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
     cin >> date >> month >> year;
-    cout << checkDays(date, month, year);
+    cout << countDays(date, month, year) << endl;
     return 0;
 }
