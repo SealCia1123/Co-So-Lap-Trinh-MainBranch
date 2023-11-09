@@ -2,12 +2,17 @@
 
 using namespace std;
 
-int daysOfYear(int date, int month, int year)
+bool checkLeapYear(int year)
 {
-    bool isLeapYear = false;
-    int daysInMonth;
     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
-        isLeapYear = true;
+        return true;
+    else
+        return false;
+}
+
+int daysInMonth(int month, int year)
+{
+    int daysInMonth;
     switch (month)
     {
         case 1:
@@ -18,21 +23,62 @@ int daysOfYear(int date, int month, int year)
         case 10:
         case 12:
             daysInMonth = 31;
+            break;
+        case 2:
+            if (checkLeapYear(year))
+            {
+                daysInMonth = 29;
+                break;
+            }
+            else
+            {
+                daysInMonth = 28;
+                break;
+            }
         case 4:
         case 6:
         case 9:
         case 11:
             daysInMonth = 30;
-        case 2:
-            if (isLeapYear)
-                daysInMonth = 29;
-            else
-                daysInMonth = 28;
+            break;
+        default:
+            daysInMonth = 0;
     }
+    return daysInMonth;
+}
+
+int checkDays(int date, int month, int year)
+{
+    int result = 0;
+    for (int i = 1; i < month; i++)
+    {
+        switch (daysInMonth(i, year))
+        {
+            case 30:
+                result += 30;
+                break;
+            case 31:
+                result += 31;
+                break;
+            case 28:
+                result += 28;
+                break;
+            case 29:
+                result += 29;
+                break;
+            default:
+                result = 0;
+                break;
+        }
+    }
+    return result + date;
 }
 
 int main()
 {
-
+    int date, month, year;
+    cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
+    cin >> date >> month >> year;
+    cout << checkDays(date, month, year);
     return 0;
 }
