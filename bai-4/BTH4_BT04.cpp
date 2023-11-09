@@ -13,8 +13,8 @@ int main()
         cout << "Nhap vao so nguyen n (n > 0): ";
         cin >> n;
     } while (n <= 0);
-
     int number = n;
+
     while (n)
     {
         length++;
