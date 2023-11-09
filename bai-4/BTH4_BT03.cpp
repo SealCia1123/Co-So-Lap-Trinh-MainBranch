@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n = 2, sumOfOddNumber = 0, sumOfEvenNumber = 0;
+    int n = 2, sumOddNumber = 0, sumEvenNumber = 0;
     do
     {
         if (n <= 1)
@@ -18,12 +18,12 @@ int main()
     while (n)
     {
         if (n % 2 == 0)
-            sumOfEvenNumber += n;
+            sumEvenNumber += n;
         else
-            sumOfOddNumber += n;
+            sumOddNumber += n;
         n--;
     }
-    cout << "Tong cac so chan tu 1 den " << number << ": " << sumOfEvenNumber << endl;
-    cout << "Tong cac so le tu 1 den " << number << ": " << sumOfOddNumber << endl;
+    cout << "Tong cac so chan tu 1 den " << number << ": " << sumEvenNumber << endl;
+    cout << "Tong cac so le tu 1 den " << number << ": " << sumOddNumber << endl;
     return 0;
 }
