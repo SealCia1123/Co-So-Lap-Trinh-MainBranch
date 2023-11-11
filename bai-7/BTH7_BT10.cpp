@@ -9,9 +9,9 @@ void swap(int &a, int &b)
     b = temp;
 }
 
-void sortTwoNumberDescend(int &a, int &b)
+void twoNumDescend(int &a, int &b)
 {
-    if (a > b)
+    if (a < b)
         swap(a, b);
 }
 
@@ -22,8 +22,10 @@ void sortThreeNumberAscend(int &a, int &b, int &c)
 
 int main()
 {
-    int a = 2, b = 1;
-    sortTwoNumberDescend(a, b);
-    cout << a << " " << b;
+    int a, b;
+    cout << "Nhap vao 2 so nguyen a, b: ";
+    cin >> a >> b;
+    twoNumDescend(a, b);
+    cout << "Thu tu 2 so giam dan: " << a << " " << b;
     return 0;
 }
