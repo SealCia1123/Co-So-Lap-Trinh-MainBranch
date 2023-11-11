@@ -15,9 +15,9 @@ int main()
     {
         cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
         cin >> date >> month >> year;
-        if ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1))
+        if (!countDays(date, month, year))
             cout << "Gia tri ngay-thang-nam nhap vao khong hop le!" << endl;
-    } while ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1));
+    } while (!countDays(date, month, year));
 
     cout << "Ngay " << date << " thang " << month << " nam " << year << " cach ngay dau tien trong nam: "
          << countDays(date, month, year) << " ngay" << endl;
@@ -71,6 +71,8 @@ int daysInMonth(int month, int year)
 
 int countDays(int date, int month, int year)
 {
+    if ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1))
+        return 0;
     int result = 0;
     for (int i = 1; i < month; i++)
     {
