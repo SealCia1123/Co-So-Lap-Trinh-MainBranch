@@ -2,7 +2,29 @@
 
 using namespace std;
 
-bool checkLeapYear(int year)
+bool isLeapYear(int year);
+
+int daysInMonth(int month, int year);
+
+int countDays(int date, int month, int year);
+
+int main()
+{
+    int date, month, year;
+    do
+    {
+        cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
+        cin >> date >> month >> year;
+        if ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1))
+            cout << "Gia tri ngay-thang-nam nhap vao khong hop le!" << endl;
+    } while ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1));
+
+    cout << "Ngay " << date << " thang " << month << " nam " << year << " cach ngay dau tien trong nam: "
+         << countDays(date, month, year) << " ngay" << endl;
+    return 0;
+}
+
+bool isLeapYear(int year)
 {
     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
         return true;
@@ -25,7 +47,7 @@ int daysInMonth(int month, int year)
             daysInMonth = 31;
             break;
         case 2:
-            if (checkLeapYear(year))
+            if (isLeapYear(year))
             {
                 daysInMonth = 29;
                 break;
@@ -69,13 +91,4 @@ int countDays(int date, int month, int year)
         }
     }
     return result + date;
-}
-
-int main()
-{
-    int date, month, year;
-    cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
-    cin >> date >> month >> year;
-    cout << countDays(date, month, year) << endl;
-    return 0;
 }
