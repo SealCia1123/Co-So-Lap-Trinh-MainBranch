@@ -13,23 +13,21 @@ void threeNumDescend(int &a, int &b, int &c);
 
 int main()
 {
-    int num1, num2;
+    int num1, num2, num3;
     cout << "Nhap vao 2 so nguyen: ";
     cin >> num1 >> num2;
     twoNumDescend(num1, num2);
     cout << "Thu tu 2 so giam dan: " << num1 << " " << num2 << endl;
 
-    int num3, num4, num5;
     cout << "Nhap vao 3 so nguyen: ";
-    cin >> num3 >> num4 >> num5;
-    threeNumAscend(num3, num4, num5);
-    cout << "Thu tu 3 so tang dan: " << num3 << " " << num4 << " " << num5 << endl;
+    cin >> num1 >> num2 >> num3;
+    threeNumAscend(num1, num2, num3);
+    cout << "Thu tu 3 so tang dan: " << num1 << " " << num2 << " " << num3 << endl;
 
-    int num6, num7, num8;
     cout << "Nhap vao 3 so nguyen: ";
-    cin >> num6 >> num7 >> num8;
-    threeNumDescend(num6, num7, num8);
-    cout << "Thu tu 3 so giam dan: " << num6 << " " << num7 << " " << num8 << endl;
+    cin >> num1 >> num2 >> num3;
+    threeNumDescend(num1, num2, num3);
+    cout << "Thu tu 3 so giam dan: " << num1 << " " << num2 << " " << num3 << endl;
     return 0;
 }
 
