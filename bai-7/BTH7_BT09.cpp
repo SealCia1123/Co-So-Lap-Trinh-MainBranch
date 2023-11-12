@@ -47,7 +47,7 @@ int daysInMonth(int month, int year)
             daysInMonth = 31;
             break;
         case 2:
-            if (isLeapYear(year))
+            if (leapYear(year))
             {
                 daysInMonth = 29;
                 break;
