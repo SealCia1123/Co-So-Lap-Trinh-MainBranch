@@ -52,7 +52,7 @@ int main()
     int num6, num7, num8;
     cout << "Nhap vao 3 so nguyen: ";
     cin >> num6 >> num7 >> num8;
-    threeNumAscend(num6, num7, num8);
+    threeNumDescend(num6, num7, num8);
     cout << "Thu tu 3 so giam dan: " << num6 << " " << num7 << " " << num8 << endl;
     return 0;
 }
