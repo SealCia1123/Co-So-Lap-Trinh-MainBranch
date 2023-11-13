@@ -30,6 +30,5 @@ int main()
     cout << "Nhap vao gia tri cua mang: ";
     for (int &i: arr)
         cin >> i;
-    deleteElement(arr, n);
     return 0;
 }
