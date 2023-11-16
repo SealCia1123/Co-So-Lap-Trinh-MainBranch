@@ -4,57 +4,28 @@ using namespace std;
 
 int main()
 {
-    int a, b, c, num1, num2, num3;
-    cout << "Nhap vao lan luot 3 so nguyen: ";
+    int a, b, c, temp;
+    cout << "Nhap vao 3 so nguyen: ";
     cin >> a >> b >> c;
     if (a > b)
     {
-        if (b > c)
-        {
-            num1 = c;
-            num2 = b;
-            num3 = a;
-        }
-        else
-        {
-            if (a > c)
-            {
-                num1 = b;
-                num2 = c;
-                num3 = a;
-            }
-            else
-            {
-                num1 = b;
-                num2 = a;
-                num3 = c;
-            }
-        }
+        temp = a;
+        a = b;
+        b = temp;
     }
-    else // a < b
+    if (a > c)
     {
-        if (a > c)
-        {
-            num1 = c;
-            num2 = a;
-            num3 = b;
-        }
-        else
-        {
-            if (b > c)
-            {
-                num1 = a;
-                num2 = c;
-                num3 = b;
-            }
-            else
-            {
-                num1 = a;
-                num2 = b;
-                num3 = c;
-            }
-        }
+        temp = a;
+        a = c;
+        c = temp;
     }
-    cout << "Thu tu tang dan cua 3 so la: " << num1 << " " << num2 << " " << num3 << endl;
+    if (b > c)
+    {
+        temp = b;
+        b = c;
+        c = temp;
+    }
+
+    cout << "Thu tu 3 so tang dan: " << a << ", " << b << ", " << c;
     return 0;
 }
