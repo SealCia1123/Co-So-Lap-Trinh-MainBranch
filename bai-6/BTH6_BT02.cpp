@@ -19,6 +19,7 @@ int biggestOfThree(int a, int b, int c)
     if (max < c)
         max = c;
     return max;
+    cout << endl;
 }
 
 int main()
