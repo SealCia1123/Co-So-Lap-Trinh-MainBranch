@@ -31,15 +31,6 @@ int main()
     return 0;
 }
 
-void threeNumDescend(int &a, int &b, int &c)
-{
-    if (a < b)
-        swap(a, b);
-    if (a < c)
-        swap(a, c);
-    if (b < c)
-        swap(b, c);
-}
 
 void threeNumAscend(int &a, int &b, int &c)
 {
@@ -48,6 +39,16 @@ void threeNumAscend(int &a, int &b, int &c)
     if (a > c)
         swap(a, c);
     if (b > c)
+        swap(b, c);
+}
+
+void threeNumDescend(int &a, int &b, int &c)
+{
+    if (a < b)
+        swap(a, b);
+    if (a < c)
+        swap(a, c);
+    if (b < c)
         swap(b, c);
 }
 
