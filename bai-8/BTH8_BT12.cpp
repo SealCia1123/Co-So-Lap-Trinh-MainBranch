@@ -3,24 +3,9 @@
 
 using namespace std;
 
-void deleteElementArr(int arr[], int &arrSize, int x)
-{
-    for (int i = x; i < arrSize; i++)
-        arr[i] = arr[i + 1];
-    arrSize--;
-}
+void deleteElementArr(int arr[], int &arrSize, int x);
 
-void deleteDuplicate(int arr[], int &size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = i + 1; j < size; j++)
-        {
-            if (arr[i] == arr[j])
-                deleteElementArr(arr, size, j);
-        }
-    }
-}
+void deleteDuplicate(int arr[], int &size);
 
 int main()
 {
@@ -37,4 +22,23 @@ int main()
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     return 0;
+}
+
+void deleteElementArr(int *arr, int &arrSize, int x)
+{
+    for (int i = x; i < arrSize; i++)
+        arr[i] = arr[i + 1];
+    arrSize--;
+}
+
+void deleteDuplicate(int *arr, int &size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = i + 1; j < size; j++)
+        {
+            if (arr[i] == arr[j])
+                deleteElementArr(arr, size, j);
+        }
+    }
 }
