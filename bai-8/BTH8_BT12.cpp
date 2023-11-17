@@ -3,12 +3,11 @@
 
 using namespace std;
 
-void deleteElementArr(int arr[], int arrSize, int x)
+void deleteElementArr(int arr[], int &arrSize, int x)
 {
     for (int i = x; i < arrSize; i++)
-    {
         arr[i] = arr[i + 1];
-    }
+    arrSize--;
 }
 
 void deleteDuplicate(int arr[], int &size)
@@ -18,10 +17,7 @@ void deleteDuplicate(int arr[], int &size)
         for (int j = i + 1; j < size; j++)
         {
             if (arr[i] == arr[j])
-            {
                 deleteElementArr(arr, size, j);
-                size--;
-            }
         }
     }
 }
