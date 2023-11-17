@@ -24,14 +24,14 @@ int main()
     return 0;
 }
 
-void deleteElementArr(int *arr, int &arrSize, int x)
+void deleteElementArr(int arr[], int &arrSize, int x)
 {
     for (int i = x; i < arrSize; i++)
         arr[i] = arr[i + 1];
     arrSize--;
 }
 
-void deleteDuplicate(int *arr, int &size)
+void deleteDuplicate(int arr[], int &size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -39,6 +39,7 @@ void deleteDuplicate(int *arr, int &size)
         {
             if (arr[i] == arr[j])
                 deleteElementArr(arr, size, j);
+            j--;
         }
     }
 }
