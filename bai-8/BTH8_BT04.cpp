@@ -1,3 +1,7 @@
+/*
+Viết chương trình nhập vào một mảng số nguyên (tối đa 100 phần tử), tính và in ra
+tổng và giá trị trung bình của các phần tử trong mảng.
+ */
 #include <iostream>
 
 #define MAXSIZE 100
@@ -10,7 +14,6 @@ int main()
     cout << "Nhap vao so luong phan tu cua mang: ";
     cin >> currentSize;
     cout << "Nhap vao gia tri cua mang: ";
-    // Nhập giá trị phần tử vào mảng
     for (int i = 0; i < currentSize; i++)
     {
         int temp;
