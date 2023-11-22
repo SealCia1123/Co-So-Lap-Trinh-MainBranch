@@ -13,12 +13,12 @@ int biggerOfTwo(int a, int b)
 
 int biggestOfThree(int a, int b, int c)
 {
-    if (a > b && a > c)
-        return a;
-    else if (b > a && b > c)
-        return b;
-    else if (c > a && c > b)
-        return c;
+    int max = a;
+    if (max < b)
+        max = b;
+    if (max < c)
+        max = c;
+    return max;
 }
 
 int main()

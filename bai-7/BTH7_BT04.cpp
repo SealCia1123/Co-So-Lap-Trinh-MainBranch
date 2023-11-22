@@ -13,7 +13,7 @@ bool isNumber(char c)
 
 bool isCharacter(char c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
         return true;
     else
         return false;
