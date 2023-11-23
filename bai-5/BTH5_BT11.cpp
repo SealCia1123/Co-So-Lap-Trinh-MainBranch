@@ -10,14 +10,18 @@ int main()
     {
         cout << "Nhap vao chieu dai canh hinh vuong c (c > 0): ";
         cin >> c;
+        if (c <= 0)
+            cout << "Nhap sai, nhap lai c trong khoang gia tri (c > 0)" << endl;
     } while (c <= 0);
 
+    cout << endl;
     for (int i = 0; i < c; i++)
     {
         for (int j = 0; j < c; j++)
             cout << "*";
         cout << endl;
     }
+
     cout << endl;
 
     for (int i = 1; i <= c; i++)

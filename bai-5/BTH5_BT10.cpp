@@ -10,7 +10,9 @@ int main()
     {
         cout << "Nhap vao 2 so nguyen n1 va n2 (n1 < n2): ";
         cin >> n1 >> n2;
-    } while (n1 >= n2);
+        if (n1 > n2)
+            cout << "Nhap sai, nhap lai n1, n2 trong khoang gia tri (n1 < n2)" << endl;
+    } while (n1 > n2);
 
     for (int i = n1; i <= n2; i++)
     {
