@@ -3,6 +3,17 @@
 
 using namespace std;
 
+void printSquare(int n);
+
+int main()
+{
+    int n;
+    cout << "Nhap vao so do canh cua hinh vuong: ";
+    cin >> n;
+    printSquare(n);
+    return 0;
+}
+
 void printSquare(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -13,13 +24,4 @@ void printSquare(int n)
         }
         cout << endl;
     }
-}
-
-int main()
-{
-    int n;
-    cout << "Nhap vao so do canh cua hinh vuong: ";
-    cin >> n;
-    printSquare(n);
-    return 0;
 }
