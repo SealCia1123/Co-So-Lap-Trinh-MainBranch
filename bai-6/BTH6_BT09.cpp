@@ -3,18 +3,18 @@
 
 using namespace std;
 
-int sum(int n);
+int sumOfDigit(int n);
 
 int main()
 {
     int n;
     cout << "Nhap vao so nguyen n: ";
     cin >> n;
-    cout << "Tong cac chu so la: " << sum(n) << endl;
+    cout << "Tong cac chu so la: " << sumOfDigit(n) << endl;
     return 0;
 }
 
-int sum(int n)
+int sumOfDigit(int n)
 {
     int sum = 0;
     while (n)
