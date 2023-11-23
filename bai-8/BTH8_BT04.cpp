@@ -15,16 +15,11 @@ int main()
     cin >> currentSize;
     cout << "Nhap vao gia tri cua mang: ";
     for (int i = 0; i < currentSize; i++)
-    {
-        int temp;
-        cin >> temp;
-        arr[i] = temp;
-    }
+        cin >> arr[i];
 
     for (int i = 0; i < currentSize; i++)
-    {
         sumOfArray += arr[i];
-    }
+
     averageOfArray = sumOfArray / currentSize;
 
     cout << "Tong cac phan tu trong mang la: " << sumOfArray << endl;

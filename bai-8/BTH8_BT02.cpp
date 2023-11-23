@@ -22,11 +22,7 @@ int main()
     cout << "Nhap vao gia tri cua mang: ";
 
     for (int i = 0; i < currentSize; i++)
-    {
-        int temp;
-        cin >> temp;
-        values[i] = temp;
-    }
+        cin >> values[i];
 
     for (int i = 0; i < currentSize; i++)
     {

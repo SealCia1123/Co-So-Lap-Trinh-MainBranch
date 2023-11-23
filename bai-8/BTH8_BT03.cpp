@@ -16,13 +16,8 @@ int main()
     cin >> currentSize;
     cout << "Nhap vao gia tri cua mang: ";
     for (int i = 0; i < currentSize; i++)
-    {
-        int temp;
-        cin >> temp;
-        arr[i] = temp;
-    }
+        cin >> arr[i];
 
-    // So sánh nếu phần tử thứ i > max thì đặt lại max = arr[i]
     for (int i = 0; i < currentSize; i++)
     {
         if (arr[i] > max)
