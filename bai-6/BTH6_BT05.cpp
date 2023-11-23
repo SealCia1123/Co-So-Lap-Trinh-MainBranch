@@ -7,10 +7,15 @@ void printSquare(int n);
 
 int main()
 {
-    int n;
-    cout << "Nhap vao so do canh cua hinh vuong: ";
-    cin >> n;
-    printSquare(n);
+    int c;
+    do
+    {
+        cout << "Nhap vao so do canh cua hinh vuong (c > 0): ";
+        cin >> c;
+        if (c <= 0)
+            cout << "Nhap sai, nhap lai so do canh cua hinh vuong (c > 0)" << endl;
+    } while (c <= 0);
+    printSquare(c);
     return 0;
 }
 

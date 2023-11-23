@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double pow(double x, int y);
+double myPow(double x, int y);
 
 int main()
 {
@@ -11,11 +11,11 @@ int main()
     int y;
     cout << "Nhap vao 2 so nguyen: ";
     cin >> x >> y;
-    cout << "Ket qua cua phep mu " << x << " va " << y << " la: " << pow(x, y) << endl;
+    cout << "Ket qua cua phep mu " << x << " va " << y << " la: " << myPow(x, y) << endl;
     return 0;
 }
 
-double pow(double x, int y)
+double myPow(double x, int y)
 {
     double result = 1;
     for (int i = 1; i <= y; i++)

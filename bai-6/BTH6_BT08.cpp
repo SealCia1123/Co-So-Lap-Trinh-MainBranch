@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int squarePerimeter(int n);
+int calSquarePerimeter(int n);
 
-int squareArea(int n);
+int calSquareArea(int n);
 
 void printSquare(int n, char c);
 
@@ -13,10 +13,16 @@ int main()
 {
     int n;
     char c;
-    cout << "Nhap vao do dai canh cua hinh vuong: ";
-    cin >> n;
-    cout << "Chu vi cua hinh vuong la: " << squarePerimeter(n) << endl;
-    cout << "Dien tich cua hinh vuong la: " << squareArea(n) << endl;
+    do
+    {
+        cout << "Nhap vao do dai canh cua hinh vuong (n > 0): ";
+        cin >> n;
+        if (n <= 0)
+            cout << "Do dai canh hinh vuong khong hop le, nhap lai" << endl;
+    } while (n <= 0);
+
+    cout << "Chu vi cua hinh vuong la: " << calSquarePerimeter(n) << endl;
+    cout << "Dien tich cua hinh vuong la: " << calSquareArea(n) << endl;
     cout << "Nhap vao ky tu cua hinh vuong: ";
     cin >> c;
     cout << "Hinh vuong co hinh dang: " << endl;
@@ -24,13 +30,13 @@ int main()
     return 0;
 }
 
-int squarePerimeter(int n)
+int calSquarePerimeter(int n)
 {
     int perimeter = 4 * n;
     return perimeter;
 }
 
-int squareArea(int n)
+int calSquareArea(int n)
 {
     int area = n * n;
     return area;

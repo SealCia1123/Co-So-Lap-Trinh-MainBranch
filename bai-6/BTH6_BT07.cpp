@@ -23,6 +23,7 @@ bool isPrime(int n)
     bool isPrime = true;
     if (n < 2)
         isPrime = false;
+
     else
     {
         for (int i = 2; i <= sqrt(n); i++)

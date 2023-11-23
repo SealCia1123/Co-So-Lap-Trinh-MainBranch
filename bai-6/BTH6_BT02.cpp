@@ -13,6 +13,7 @@ int main()
     cout << "Nhap vao 2 so nguyen: ";
     cin >> num1 >> num2;
     cout << "So lon hon trong 2 so la: " << biggerOfTwo(num1, num2) << endl;
+
     int num3, num4, num5;
     cout << "Nhap vao 3 so nguyen: ";
     cin >> num3 >> num4 >> num5;
@@ -24,8 +25,7 @@ int biggerOfTwo(int a, int b)
 {
     if (a >= b)
         return a;
-    else
-        return b;
+    return b;
 }
 
 int biggestOfThree(int a, int b, int c)

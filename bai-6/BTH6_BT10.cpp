@@ -1,4 +1,4 @@
-// hàm kiểm tra số hoàn thiện, VD số hoàn thiện: 6: 1 + 2 + 3, tổng các số là ước của n = n
+// hàm kiểm tra số hoàn thiện, VD số hoàn thiện: 6 = 1 + 2 + 3, tổng các số là ước của n = n
 #include <iostream>
 
 using namespace std;
@@ -27,6 +27,5 @@ bool checkPerfectNumber(int n)
     }
     if (result == n)
         return true;
-    else
-        return false;
+    return false;
 }
