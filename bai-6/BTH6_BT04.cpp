@@ -9,13 +9,13 @@ int factorial(int n);
 
 int main()
 {
-    int n = 1;
+    int n;
     do
     {
-        if (n <= 0)
-            cout << "Nhap sai, nhap lai n nam trong khoang gia tri (n > 0)" << endl;
         cout << "Nhap vao so nguyen n (n > 0): ";
         cin >> n;
+        if (n <= 0)
+            cout << "Nhap sai, nhap lai n nam trong khoang gia tri (n > 0)" << endl;
     } while (n <= 0);
 
     cout << "Tong cac so tu 1 den " << n << " la: " << sum(n) << endl;
