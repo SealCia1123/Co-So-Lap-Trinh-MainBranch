@@ -29,14 +29,12 @@ bool isNumber(char c)
 {
     if (c >= 48 && c <= 57)
         return true;
-    else
-        return false;
+    return false;
 }
 
 bool isCharacter(char c)
 {
     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
         return true;
-    else
-        return false;
+    return false;
 }

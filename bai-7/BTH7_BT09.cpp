@@ -28,8 +28,7 @@ bool isLeapYear(int year)
 {
     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
         return true;
-    else
-        return false;
+    return false;
 }
 
 int daysInMonth(int month, int year)
@@ -44,35 +43,27 @@ int daysInMonth(int month, int year)
         case 8:
         case 10:
         case 12:
-            daysInMonth = 31;
-            break;
+            return daysInMonth = 31;
         case 2:
             if (isLeapYear(year))
-            {
-                daysInMonth = 29;
-                break;
-            }
+                return daysInMonth = 29;
             else
-            {
-                daysInMonth = 28;
-                break;
-            }
+                return daysInMonth = 28;
         case 4:
         case 6:
         case 9:
         case 11:
-            daysInMonth = 30;
-            break;
+            return daysInMonth = 30;
         default:
-            daysInMonth = 0;
+            return daysInMonth = 0;
     }
-    return daysInMonth;
 }
 
 int countDays(int date, int month, int year)
 {
     if ((date > 31 || date < 1) || (month > 12 || month < 1) || (year < 1))
         return 0;
+
     int result = 0;
     for (int i = 1; i < month; i++)
     {

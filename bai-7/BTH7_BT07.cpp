@@ -3,21 +3,9 @@
 
 using namespace std;
 
-bool checkLowerCase(char c)
-{
-    if (c >= 97 && c <= 122)
-        return true;
-    else
-        return false;
-}
+bool checkLowerCase(char c);
 
-bool checkUpperCase(char c)
-{
-    if (c >= 65 && c <= 90)
-        return true;
-    else
-        return false;
-}
+bool checkUpperCase(char c);
 
 int main()
 {
@@ -29,10 +17,24 @@ int main()
     {
         if (checkLowerCase(str[i]))
             lowerCase++;
-        else if (checkUpperCase(str[i]))
+        if (checkUpperCase(str[i]))
             upperCase++;
     }
     cout << "Chuoi \"" << str << "\" co " << lowerCase << " ky tu in thuong va " << upperCase << " ky tu in hoa"
          << endl;
     return 0;
+}
+
+bool checkLowerCase(char c)
+{
+    if (c >= 'a' && c <= 'z')
+        return true;
+    return false;
+}
+
+bool checkUpperCase(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return true;
+    return false;
 }
