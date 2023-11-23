@@ -1,4 +1,4 @@
-// số lượng ước của 10 trong khoảng n1 -> n2
+// số lượng ước của 100 trong khoảng n1 -> n2
 #include <iostream>
 
 using namespace std;
@@ -17,7 +17,7 @@ int main()
     int i = n1;
     while (i <= n2)
     {
-        if (10 % i == 0)
+        if (100 % i == 0)
             count++;
         i++;
     }
