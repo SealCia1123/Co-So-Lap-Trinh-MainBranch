@@ -31,6 +31,8 @@ int main()
 //    }
 
     // hình c.
+    cout << endl;
+
     for (int i = 0; i < h; i++)
     {
         for (int j = i; j < h; j++)

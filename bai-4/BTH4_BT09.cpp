@@ -1,4 +1,4 @@
-// số lượng ước của 10 trong khoảng n1 -> n2
+// số lượng ước của 100 trong khoảng n1 -> n2
 #include <iostream>
 
 using namespace std;
@@ -17,10 +17,10 @@ int main()
     int i = n1;
     while (i <= n2)
     {
-        if (10 % i == 0)
+        if (100 % i == 0)
             count++;
         i++;
     }
-    cout << "So luong uoc so cua 10 trong khoang " << n1 << " va " << n2 << " la: " << count << endl;
+    cout << "So luong uoc so cua 100 trong khoang " << n1 << " va " << n2 << " la: " << count << endl;
     return 0;
 }

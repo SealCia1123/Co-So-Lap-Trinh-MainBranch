@@ -3,6 +3,27 @@
 
 using namespace std;
 
+int calFactorial(int n);
+
+int toHop(int n, int k);
+
+void printTriagle(int h);
+
+int main()
+{
+    int factorial, k, n, h;
+    cout << "Nhap vao so nguyen n can tinh giai thua: ";
+    cin >> factorial;
+    cout << "Giai thua cua " << factorial << " la: " << calFactorial(factorial) << endl;
+    cout << "Nhap vao to hop chap k cua n: ";
+    cin >> k >> n;
+    cout << "To hop chap k cua n la: " << toHop(n, k) << endl;
+    cout << "Nhap vao chieu cao h: ";
+    cin >> h;
+    printTriagle(h);
+    return 0;
+}
+
 int calFactorial(int n)
 {
     if (n == 0)
@@ -30,19 +51,4 @@ void printTriagle(int h)
         }
         cout << endl;
     }
-}
-
-int main()
-{
-    int factorial, k, n, h;
-    cout << "Nhap vao so nguyen n can tinh giai thua: ";
-    cin >> factorial;
-    cout << "Giai thua cua " << factorial << " la: " << calFactorial(factorial) << endl;
-    cout << "Nhap vao to hop chap k cua n: ";
-    cin >> k >> n;
-    cout << "To hop chap k cua n la: " << toHop(n, k) << endl;
-    cout << "Nhap vao chieu cao h: ";
-    cin >> h;
-    printTriagle(h);
-    return 0;
 }

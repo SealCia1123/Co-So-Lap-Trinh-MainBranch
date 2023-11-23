@@ -1,3 +1,10 @@
+/*
+ * viết các hàm:
+ *  a. Hàm nhập dãy số vào mảng
+ *  b. Hàm in các số trong mảng, cách nhau bởi dấu phây
+ *  c. Hàm tìm giá trị trong mảng và trả về boolean
+ *  d. Hàm đảo ngược các phần tử của mảng
+ */
 #include <iostream>
 
 using namespace std;

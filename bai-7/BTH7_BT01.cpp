@@ -3,13 +3,7 @@
 
 using namespace std;
 
-bool isLeapYear(int year)
-{
-    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
-        return true;
-    else
-        return false;
-}
+bool isLeapYear(int year);
 
 int main()
 {
@@ -21,4 +15,12 @@ int main()
     else
         cout << "Nam " << year << " khong phai la nam nhuan" << endl;
     return 0;
+}
+
+bool isLeapYear(int year)
+{
+    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+        return true;
+    else
+        return false;
 }

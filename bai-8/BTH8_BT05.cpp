@@ -1,3 +1,7 @@
+/*
+ Viết chương trình nhập vào một mảng số nguyên (tối đa 100 phần tử) và vị trí của
+phần tử cần xóa, xóa phần tử tại vị trí đã nhập và in ra mảng sau khi xóa.
+ */
 #include <iostream>
 
 #define MAXSIZE 100
@@ -10,7 +14,7 @@ int main()
     cout << "Nhap vao so luong phan tu cua mang: ";
     cin >> currentSize;
     cout << "Nhap vao gia tri cua mang: ";
-    // Nhập giá trị phần tử vào mảng
+
     for (int i = 0; i < currentSize; i++)
     {
         int temp;
@@ -22,7 +26,8 @@ int main()
     cin >> deleteIndex;
     for (int i = deleteIndex; i < currentSize; i++)
         arr[i] = arr[i + 1];
-    --currentSize;
+
+    currentSize--;
     cout << "Mang sau khi xoa phan tu: ";
     for (int i = 0; i < currentSize; i++)
         cout << arr[i] << " ";

@@ -3,15 +3,9 @@
 
 using namespace std;
 
-int rectangleArea(int length, int width)
-{
-    return length * width;
-}
+int rectangleArea(int length, int width);
 
-int rectanglePerimeter(int length, int witdh)
-{
-    return (length + witdh) * 2;
-}
+int rectanglePerimeter(int length, int witdh);
 
 int main()
 {
@@ -23,3 +17,14 @@ int main()
 
     return 0;
 }
+
+int rectangleArea(int length, int width)
+{
+    return length * width;
+}
+
+int rectanglePerimeter(int length, int witdh)
+{
+    return (length + witdh) * 2;
+}
+

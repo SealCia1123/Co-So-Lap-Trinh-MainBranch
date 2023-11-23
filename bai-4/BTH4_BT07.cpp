@@ -41,9 +41,12 @@ int main()
                 cin >> a >> b;
                 if (b != 0)
                 {
-                    cout << "Ket qua cua phep chia " << a << " / " << b << " = " << fixed << setprecision(2)
-                         << (double) a / b
-                         << endl;
+                    if (a % b == 0)
+                        cout << "Ket qua cua phep chia " << a << " / " << b << " = " << a / b << endl;
+                    else
+                        cout << "Ket qua cua phep chia " << a << " / " << b << " = " << fixed << setprecision(2)
+                             << (double) a / b
+                             << endl;
                 }
                 else
                     cout << "Loi chia cho so 0" << endl;
@@ -64,5 +67,6 @@ int main()
             cout << "Thoat chuong trinh" << endl;
             return 0;
         }
+        system("cls");
     }
 }

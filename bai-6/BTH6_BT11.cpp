@@ -3,6 +3,21 @@
 
 using namespace std;
 
+bool isPalindrome(int n);
+
+int main()
+{
+    int n;
+    cout << "Nhap vao so nguyen n: ";
+    cin >> n;
+    if (isPalindrome(n))
+        cout << "So " << n << " la so doi xung" << endl;
+    else
+        cout << "So " << n << " khong phai la so doi xung" << endl;
+
+    return 0;
+}
+
 bool isPalindrome(int n)
 {
     int reversedNum = 0, temp = n;
@@ -16,17 +31,4 @@ bool isPalindrome(int n)
         return true;
     else
         return false;
-}
-
-int main()
-{
-    int n;
-    cout << "Nhap vao so nguyen n: ";
-    cin >> n;
-    if (isPalindrome(n))
-        cout << "So " << n << " la so doi xung" << endl;
-    else
-        cout << "So " << n << " khong phai la so doi xung" << endl;
-
-    return 0;
 }

@@ -4,6 +4,20 @@
 
 using namespace std;
 
+bool isPrime(int n);
+
+int main()
+{
+    int n;
+    cout << "Nhap vao so nguyen can kiem tra: ";
+    cin >> n;
+    if (isPrime(n))
+        cout << "So " << n << " la so nguyen to" << endl;
+    else
+        cout << "So " << n << " khong phai la so nguyen to" << endl;
+    return 0;
+}
+
 bool isPrime(int n)
 {
     bool isPrime = true;
@@ -21,16 +35,4 @@ bool isPrime(int n)
         }
     }
     return isPrime;
-}
-
-int main()
-{
-    int n;
-    cout << "Nhap vao so nguyen can kiem tra: ";
-    cin >> n;
-    if (isPrime(n))
-        cout << "So " << n << " la so nguyen to" << endl;
-    else
-        cout << "So " << n << " khong phai la so nguyen to" << endl;
-    return 0;
 }

@@ -1,3 +1,12 @@
+/*
+a) Định nghĩa hằng MAXSIZE là 100.
+b) Khai báo mảng values có thể lưu số phần tử tối đa là MAXSIZE, kiểu của mỗi
+phần tử là double.
+c) Khai báo currentSize lưu số phần tử hiện có trong mảng.
+d) Nhập vào giá trị của currentSize.
+e) Nhập vào các giá trị trong mảng values, số phần tử đọc vào là currentSize.
+f) In các phần tử trong mảng values trên một dòng, cách nhau bởi dấu phẩy.*
+ */
 #include <iostream>
 
 #define MAXSIZE 100
@@ -13,12 +22,8 @@ int main()
     cout << "Nhap vao gia tri cua mang: ";
 
     for (int i = 0; i < currentSize; i++)
-    {
-        int temp;
-        cin >> temp;
-        values[i] = temp;
-    }
-   
+        cin >> values[i];
+
     for (int i = 0; i < currentSize; i++)
     {
         if (i == currentSize - 1)

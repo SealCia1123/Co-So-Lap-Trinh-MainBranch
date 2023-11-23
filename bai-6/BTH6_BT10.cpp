@@ -3,6 +3,20 @@
 
 using namespace std;
 
+bool checkPerfectNumber(int n);
+
+int main()
+{
+    int n;
+    cout << "Nhap vao so nguyen n: ";
+    cin >> n;
+    if (checkPerfectNumber(n))
+        cout << "So " << n << " la so hoan thien" << endl;
+    else
+        cout << "So " << n << " khong phai la so hoan thien" << endl;
+    return 0;
+}
+
 bool checkPerfectNumber(int n)
 {
     int result = 0;
@@ -15,16 +29,4 @@ bool checkPerfectNumber(int n)
         return true;
     else
         return false;
-}
-
-int main()
-{
-    int n;
-    cout << "Nhap vao so nguyen n: ";
-    cin >> n;
-    if (checkPerfectNumber(n))
-        cout << "So " << n << " la so hoan thien" << endl;
-    else
-        cout << "So " << n << " khong phai la so hoan thien" << endl;
-    return 0;
 }
