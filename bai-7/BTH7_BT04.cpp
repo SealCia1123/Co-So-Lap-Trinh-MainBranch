@@ -3,22 +3,9 @@
 
 using namespace std;
 
-bool isNumber(char c)
-{
-    if (c >= 48 && c <= 57)
-        return true;
-    else
-        return false;
-}
+bool isNumber(char c);
 
-bool isCharacter(char c)
-{
-    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-        return true;
-    else
-        return false;
-}
-
+bool isCharacter(char c);
 
 int main()
 {
@@ -36,4 +23,20 @@ int main()
 
     cout << "Chuoi \"" << str << "\" co " << countCharacter << " ky tu chu va " << countNumber << " ky tu so" << endl;
     return 0;
+}
+
+bool isNumber(char c)
+{
+    if (c >= 48 && c <= 57)
+        return true;
+    else
+        return false;
+}
+
+bool isCharacter(char c)
+{
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        return true;
+    else
+        return false;
 }
