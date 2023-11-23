@@ -13,6 +13,7 @@ int main()
         if (m < 1)
             cout << "So luong so nhap vao khong hop le" << endl;
     } while (m < 1);
+
     for (int i = 1; i <= m; i++)
     {
         int x;
