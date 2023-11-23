@@ -21,6 +21,6 @@ int main()
             count++;
         i++;
     }
-    cout << "So luong uoc so cua 10 trong khoang " << n1 << " va " << n2 << " la: " << count << endl;
+    cout << "So luong uoc so cua 100 trong khoang " << n1 << " va " << n2 << " la: " << count << endl;
     return 0;
 }
