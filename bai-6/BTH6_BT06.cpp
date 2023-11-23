@@ -3,17 +3,7 @@
 
 using namespace std;
 
-int reversedNumber(int n)
-{
-    int reversedNumber = 0;
-    while (n)
-    {
-        int lastDigit = n % 10;
-        reversedNumber = reversedNumber * 10 + lastDigit;
-        n /= 10;
-    }
-    return reversedNumber;
-}
+int reversedNumber(int n);
 
 int main()
 {
@@ -28,4 +18,16 @@ int main()
 
     cout << "So nguyen dao nguoc la: " << reversedNumber(n) << endl;
     return 0;
+}
+
+int reversedNumber(int n)
+{
+    int reversedNumber = 0;
+    while (n)
+    {
+        int lastDigit = n % 10;
+        reversedNumber = reversedNumber * 10 + lastDigit;
+        n /= 10;
+    }
+    return reversedNumber;
 }
