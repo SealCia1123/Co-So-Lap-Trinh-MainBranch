@@ -6,8 +6,13 @@ using namespace std;
 int main()
 {
     int m, sum = 0;
-    cout << "Ban can nhap bao nhieu so: ";
-    cin >> m;
+    do
+    {
+        cout << "Ban can nhap bao nhieu so: ";
+        cin >> m;
+        if (m < 1)
+            cout << "So luong so nhap vao khong hop le" << endl;
+    } while (m < 1);
     for (int i = 1; i <= m; i++)
     {
         int x;
