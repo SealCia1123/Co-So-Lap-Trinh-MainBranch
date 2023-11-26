@@ -14,15 +14,13 @@ int main()
         cout << "So " << n << " la so doi xung" << endl;
     else
         cout << "So " << n << " khong phai la so doi xung" << endl;
-
     return 0;
 }
 
 bool isPalindrome(int n)
 {
     int reversedNum = 0, temp = n;
-    while (temp)
-    {
+    while (temp) {
         int lastDigit = temp % 10;
         reversedNum = reversedNum * 10 + lastDigit;
         temp /= 10;
