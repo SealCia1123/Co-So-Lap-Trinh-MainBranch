@@ -11,7 +11,7 @@ int main()
         cout << "Nhap vao 2 so nguyen duong n1 va n2 (n2 > n1): ";
         cin >> n1 >> n2;
         if (n1 > n2)
-            cout << "Nhap sai, nhap lai n1, n2 trong khoang (n1 < n2)\n";
+            cout << "Nhap sai, nhap lai n1, n2 trong khoang (n1 < n2)" << endl;
     } while (n1 > n2);
 
     int i = n1;

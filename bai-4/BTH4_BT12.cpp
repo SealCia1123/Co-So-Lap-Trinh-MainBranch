@@ -14,7 +14,7 @@ int main()
         cout << "Nhap vao so nguyen n (n > 0): ";
         cin >> n;
         if (n <= 0)
-            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 0)\n";
+            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 0)" << endl;
     } while (n <= 0);
 
     while (n)
@@ -30,6 +30,5 @@ int main()
         cout << lastDigit << " ";
         reversedNumber /= 10;
     }
-
     return 0;
 }
