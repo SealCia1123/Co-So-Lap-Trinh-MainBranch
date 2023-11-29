@@ -32,9 +32,12 @@ void deleteElement(int arr[], int &size, int value)
 
 void deleteDuplicateElement(int arr[], int &size)
 {
-    for (int i = 0; i < size; i++) {
-        for (int j = i + 1; j < size; j++) {
-            if (arr[i] == arr[j]) {
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = i + 1; j < size; j++)
+        {
+            if (arr[i] == arr[j])
+            {
                 deleteElement(arr, size, j);
                 j--;
             }
