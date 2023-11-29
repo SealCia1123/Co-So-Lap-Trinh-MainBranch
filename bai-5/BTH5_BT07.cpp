@@ -11,7 +11,7 @@ int main()
         cout << "Nhap vao chieu cao h cua tam giac (h > 0): ";
         cin >> h;
         if (h <= 0)
-            cout << "Chieu cao cua tam giac khong hop le (h > 0)\n";
+            cout << "Chieu cao cua tam giac khong hop le (h > 0)" << endl;
     } while (h <= 0);
 
     for (int i = 0; i < h; i++)
