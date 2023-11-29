@@ -14,7 +14,7 @@ int main()
         cout << "Nhap vao so nguyen n (n > 0): ";
         cin >> n;
         if (n <= 0)
-            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 0)" << endl;
+            cout << "Nhap sai gia tri n, nhap lai n nam trong khoang (n > 0)\n";
     } while (n <= 0);
 
     while (n)
