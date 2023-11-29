@@ -11,7 +11,7 @@ int main()
         cout << "Ban can nhap bao nhieu so: ";
         cin >> m;
         if (m < 1)
-            cout << "So luong so nhap vao khong hop le" << endl;
+            cout << "So luong so nhap vao khong hop le\n";
     } while (m < 1);
 
     for (int i = 1; i <= m; i++)

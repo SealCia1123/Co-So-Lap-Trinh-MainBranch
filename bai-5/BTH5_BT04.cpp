@@ -12,7 +12,7 @@ int main()
         cout << "Nhap vao so nguyen duong n: ";
         cin >> n;
         if (n <= 0)
-            cout << "Nhap sai, nhap lai n trong khoang gia tri (n > 0)" << endl;
+            cout << "Nhap sai, nhap lai n trong khoang gia tri (n > 0)\n";
     } while (n <= 0);
 
     for (int i = 1; i <= n; i++)
