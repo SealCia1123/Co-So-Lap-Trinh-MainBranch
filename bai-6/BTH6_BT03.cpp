@@ -18,7 +18,17 @@ int main()
 double myPow(double x, int y)
 {
     double result = 1;
-    for (int i = 1; i <= y; i++)
-        result *= x;
+    if (y == 0)
+        result = 1;
+    else if (y > 0)
+    {
+        for (int i = 1; i <= y; i++)
+            result *= x;
+    }
+    else
+    {
+        for (int i = 1; i <= -y; i++)
+            result /= x;
+    }
     return result;
 }

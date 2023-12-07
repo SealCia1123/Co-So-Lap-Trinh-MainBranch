@@ -1,37 +1,39 @@
 // nhập vào chiều dài của hình vuông sau đó in ra 2 hình vuông
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main()
 {
+    char choice;
     int c;
-    do
+    cout << "Lua chon (a, b): ";
+    cin >> choice;
+    cout << "Nhap vao chieu dai canh hinh vuong: ";
+    cin >> c;
+    switch (choice)
     {
-        cout << "Nhap vao chieu dai canh hinh vuong c (c > 0): ";
-        cin >> c;
-        if (c <= 0)
-            cout << "Nhap sai, nhap lai c trong khoang gia tri (c > 0)" << endl;
-    } while (c <= 0);
-
-    cout << endl;
-    for (int i = 0; i < c; i++)
-    {
-        for (int j = 0; j < c; j++)
-            cout << "*";
-        cout << endl;
-    }
-
-    cout << endl;
-
-    for (int i = 1; i <= c; i++)
-    {
-        for (int i = 1; i <= c; i++)
-            for (int j = 1; j <= c; j++)
+        case 'a':
+            for (int i = 0; i < c; i++)
             {
-
+                for (int j = 0; j < c; j++)
+                    cout << "*";
+                cout << endl;
             }
-        cout << endl;
+            break;
+        case 'b':
+            for (int j = 1; j <= c; j++)
+                cout << "*";
+            cout << endl;
+            for (int j = 2; j <= c - 1; j++)
+                cout << "*" << setw(c) << "*\n";
+            for (int j = 1; j <= c; j++)
+                cout << "*";
+            break;
+        default:
+            cout << "Lua chon khong hop le\n";
     }
+
     return 0;
 }

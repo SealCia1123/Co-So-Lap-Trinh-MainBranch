@@ -30,10 +30,6 @@ int biggerOfTwo(int a, int b)
 
 int biggestOfThree(int a, int b, int c)
 {
-    int max = a;
-    if (max < b)
-        max = b;
-    if (max < c)
-        max = c;
-    return max;
+    int max = biggerOfTwo(a, b);
+    return (max > c ? max : c);
 }
