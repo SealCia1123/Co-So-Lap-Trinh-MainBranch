@@ -26,16 +26,11 @@ int main()
 
     for (int i = 1; i <= c; i++)
     {
-        for (int j = 1; j <= c; j++)
-        {
-            if (i == 1 || i == c)
-                cout << "*";
-            else if (j == 1 || j == c)
-                cout << "*";
-            else
-                cout << " ";
+        for (int i = 1; i <= c; i++)
+            for (int j = 1; j <= c; j++)
+            {
 
-        }
+            }
         cout << endl;
     }
     return 0;

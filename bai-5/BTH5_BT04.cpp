@@ -8,7 +8,6 @@ int main()
     int n, result = 1;
     do
     {
-
         cout << "Nhap vao so nguyen duong n (n > 0): ";
         cin >> n;
         if (n <= 0)
