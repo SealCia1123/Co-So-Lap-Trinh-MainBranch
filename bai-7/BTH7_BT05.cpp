@@ -25,6 +25,6 @@ void swap(int &a, int &b)
 
 void ascend(int &a, int &b)
 {
-    if (a >= b)
+    if (a > b)
         swap(a, b);
 }

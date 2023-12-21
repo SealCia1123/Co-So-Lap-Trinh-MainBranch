@@ -25,10 +25,10 @@ int main()
 
 int uocChungLonNhat(int m, int n)
 {
+    m = abs(m);
+    n = abs(n);
     if (n == 0)
         return m;
-//    int r = m % n;
-//    return uocChungLonNhat(n, r);
     while (n)
     {
         int r = m % n;

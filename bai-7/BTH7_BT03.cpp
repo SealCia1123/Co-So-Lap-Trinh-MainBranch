@@ -26,12 +26,10 @@ int main()
 
 int calFactorial(int n)
 {
-    if (n == 0)
-        return 1;
-    else if (n == 1)
-        return 1;
-    else
-        return n * calFactorial(n - 1);
+    int factorial = 1;
+    for (int i = 2; i <= n; i++)
+        factorial *= i;
+    return factorial;
 }
 
 int toHop(int n, int k)
@@ -46,9 +44,7 @@ void printTriagle(int h)
     for (int i = 0; i < h; i++)
     {
         for (int j = 0; j <= i; j++)
-        {
             cout << " " << toHop(i, j);
-        }
         cout << endl;
     }
 }
