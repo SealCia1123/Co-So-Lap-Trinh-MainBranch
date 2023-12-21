@@ -87,7 +87,7 @@ int tru(int a, int b)
 
 double nhan(int a, int b)
 {
-    return a * b;
+    return (double) a * b;
 }
 
 double chia(int a, int b)

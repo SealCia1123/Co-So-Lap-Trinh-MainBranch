@@ -16,7 +16,7 @@ int main()
         cout << "Nhap vao 3 gia tri ngay-thang-nam: ";
         cin >> date >> month >> year;
         if (!countDays(date, month, year))
-            cout << "Gia tri ngay-thang-nam nhap vao khong hop le!" << endl;
+            cout << "Gia tri ngay-thang-nam nhap vao khong hop le" << endl;
     } while (!countDays(date, month, year));
 
     cout << "Ngay " << date << " thang " << month << " nam " << year << " cach ngay dau tien trong nam: "
