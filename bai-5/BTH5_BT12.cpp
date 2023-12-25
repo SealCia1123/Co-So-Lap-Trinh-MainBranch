@@ -33,7 +33,6 @@ int main()
             break;
         case 'c':
             // hình c.
-            cout << endl;
             for (int i = h; i >= 1; i--)
             {
                 for (int j = 1; j <= i; j++)
@@ -64,7 +63,6 @@ int main()
         default:
             cout << "Lua chon khong hop le\n";
     }
-
 
     return 0;
 }
