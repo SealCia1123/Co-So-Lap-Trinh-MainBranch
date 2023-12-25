@@ -1,5 +1,6 @@
 // hàm tính giai thừa, tổ hợp, in ra tam giác pascal
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -11,13 +12,7 @@ void printTriagle(int h);
 
 int main()
 {
-    int factorial, k, n, h;
-    cout << "Nhap vao so nguyen n can tinh giai thua: ";
-    cin >> factorial;
-    cout << "Giai thua cua " << factorial << " la: " << calFactorial(factorial) << endl;
-    cout << "Nhap vao to hop chap k cua n: ";
-    cin >> k >> n;
-    cout << "To hop chap k cua n la: " << toHop(n, k) << endl;
+    int h;
     cout << "Nhap vao chieu cao h: ";
     cin >> h;
     printTriagle(h);
@@ -41,10 +36,21 @@ int toHop(int n, int k)
 
 void printTriagle(int h)
 {
+    cout << "  k |  " << setw(6);
+    for (int i = 0; i < h; i++)
+        cout << i << setw(8);
+    cout << endl;
+    cout << setw(1);
+    for (int i = 0; i < h; i++)
+        cout << "_" << setw(4);
+    cout << endl;
+
+    cout << endl;
     for (int i = 0; i < h; i++)
     {
+        cout << setw(3) << i << " |";
         for (int j = 0; j <= i; j++)
-            cout << " " << toHop(i, j);
+            cout << setw(8) << toHop(i, j);
         cout << endl;
     }
 }
