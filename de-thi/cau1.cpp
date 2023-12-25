@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 
-using std::cout, std::cin, std::endl, std::fixed, std::setprecision;
+using namespace std;
 
 int ChuSoNhoNhat(int n);
 
