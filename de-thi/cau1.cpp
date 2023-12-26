@@ -60,17 +60,14 @@ int main()
 
 double s(int n)
 {
-    int temp = 0;
-    double result = 0;
-    for (int i = 3; i <= n; i += 2)
+    double result = (double) 1 / 3;
+    for (int i = 2; i <= n; i++)
     {
-        double tam = (double) 1 / i;
-        if (temp % 2 == 0)
-            tam = tam * -1;
-        result += tam;
-        temp++;
+        if (i & 1)
+            result -= (double) 1 / (2 * i + 1);
+        else
+            result += (double) 1 / (2 * i + 1);
     }
-
     return result;
 }
 
