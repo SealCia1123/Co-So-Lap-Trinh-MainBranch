@@ -76,8 +76,8 @@ void speacialSort(int arr[], int size)
         if (arr[i] & 1)
             ++countOdd;
     }
-    sort(arr, 0, countOdd - 1);
-    sort(arr, countOdd, size - 1);
+    sort(arr, 0, countOdd);
+    sort(arr, countOdd, size);
 }
 
 void sort(int arr[], int start, int end)
