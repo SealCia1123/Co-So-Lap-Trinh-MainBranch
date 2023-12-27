@@ -31,11 +31,15 @@ int main()
     int arr[size];
     // Cau a
     generateArray(arr, size);
+    cout << "Mang: ";
     printArray(arr, size);
     //Cau b
     printMaxMin(arr, size);
     // Cau c
+    cout << "Mang truoc khi sap xep: ";
+    printArray(arr, size);
     speacialSort(arr, size);
+    cout << "\nMang sau khi sap xep: ";
     printArray(arr, size);
 }
 
