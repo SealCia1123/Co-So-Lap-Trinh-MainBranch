@@ -86,7 +86,9 @@ double s(int n)
 
 int ChuSoNhoNhat(int n)
 {
+    // Cho min =  chu so ngoai cung ben trai
     int min = n % 10;
+    // Xet tat ca chu so cua n, neu co chu so nho hon min thay min = chu so do
     while (n)
     {
         int temp = n % 10;
