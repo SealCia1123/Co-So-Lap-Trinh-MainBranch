@@ -1,3 +1,10 @@
+// Cau 1
+/*
+ * Tao menu co 2 ham chuc nang
+ * Ham 1: Tim chu so nho nhat trong mot so nguyen
+ * Ham 2: Tinh S(n) = 1/3 + 1/5 - 1/7 + 1/9 ... + 1/
+ * (2n + 1)
+ */
 #include <iostream>
 #include <iomanip>
 
@@ -19,27 +26,35 @@ int main()
         switch (choice)
         {
             case 1:
-                cout << "TIM CHU SO NHO NHAT TRONG MOT SO NGUYEN\n";
+                cout
+                        << "TIM CHU SO NHO NHAT TRONG MOT SO NGUYEN\n";
                 do
                 {
-                    cout << "Nhap vao so nguyen n (n > 0): ";
+                    cout
+                            << "Nhap vao so nguyen n (n > 0): ";
                     cin >> n;
                     if (n <= 0)
-                        cout << "Nhap sai, nhap lai n > 0\n";
+                        cout
+                                << "Nhap sai, nhap lai n > 0\n";
                 } while (n <= 0);
-                cout << "Chu so nho nhat trong " << n << " la: " << ChuSoNhoNhat(n) << endl;
+                cout << "Chu so nho nhat trong " << n
+                     << " la: " << ChuSoNhoNhat(n) << endl;
                 break;
 
             case 2:
-                cout << "Tinh S(n) = 1/3 + 1/5 - 1/7 + 1/9 ... + 1/(2n + 1)\n";
+                cout
+                        << "Tinh S(n) = 1/3 + 1/5 - 1/7 + 1/9 ... + 1/(2n + 1)\n";
                 do
                 {
-                    cout << "Nhap vao so nguyen n (n > 0): ";
+                    cout
+                            << "Nhap vao so nguyen n (n > 0): ";
                     cin >> n;
                     if (n <= 0)
-                        cout << "Nhap sai, nhap lai n > 0\n";
+                        cout
+                                << "Nhap sai, nhap lai n > 0\n";
                 } while (n <= 0);
-                cout << "S(" << n << "): " << fixed << setprecision(4) << s(n) << endl;
+                cout << "S(" << n << "): " << fixed
+                     << setprecision(4) << s(n) << endl;
                 break;
 
             default:
@@ -87,6 +102,7 @@ int ChuSoNhoNhat(int n)
 void menu()
 {
     cout << "1. Tim so nho nhat trong mot so nguyen\n";
-    cout << "2. Tinh S(n) = 1/3 + 1/5 - 1/7 + 1/9 ... + 1/(2n + 1)\n";
+    cout
+            << "2. Tinh S(n) = 1/3 + 1/5 - 1/7 + 1/9 ... + 1/(2n + 1)\n";
     cout << "Chon 1 hoac 2: ";
 }
