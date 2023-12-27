@@ -26,6 +26,7 @@ void calMoney(bool winningState);
 
 int main()
 {
+    srand(time(0));
     while (true)
     {
         // Hien menu va cho nguoi dung nhap lua chon
@@ -110,14 +111,9 @@ void playGame()
     bool winningState = false;
 
     // Khai bao 3 con xuc xac
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> dice1(1, 6);
-    uniform_int_distribution<> dice2(1, 6);
-    uniform_int_distribution<> dice3(1, 6);
-    int DICE1 = dice1(gen);
-    int DICE2 = dice3(gen);
-    int DICE3 = dice3(gen);
+    int DICE1 = rand() % (6 - 1 + 1) + 1;
+    int DICE2 = rand() % (6 - 1 + 1) + 1;
+    int DICE3 = rand() % (6 - 1 + 1) + 1;
     int totalNumber = DICE1 + DICE2 + DICE3;
 
     cout << "=====================================================================================================\n";
