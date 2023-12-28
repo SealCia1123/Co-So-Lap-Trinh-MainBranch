@@ -4,13 +4,13 @@ phần tử lớn nhất của mảng.
  */
 #include <iostream>
 
-#define MAXSIZE 100
-
 using namespace std;
+
+const int MAXSIZE = 100;
 
 int main()
 {
-    int arr[MAXSIZE], currentSize, max = arr[0];
+    int arr[MAXSIZE], currentSize;
 
     cout << "Nhap vao so luong phan tu cua mang: ";
     cin >> currentSize;
@@ -18,6 +18,7 @@ int main()
     for (int i = 0; i < currentSize; i++)
         cin >> arr[i];
 
+    int max = arr[0];
     for (int i = 0; i < currentSize; i++)
     {
         if (arr[i] > max)

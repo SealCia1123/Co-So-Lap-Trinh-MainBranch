@@ -9,9 +9,9 @@ f) In các phần tử trong mảng values trên một dòng, cách nhau bởi d
  */
 #include <iostream>
 
-#define MAXSIZE 100
-
 using namespace std;
+
+const int MAXSIZE = 100;
 
 int main()
 {
