@@ -46,7 +46,7 @@ void printArr(const int arr[], int size)
 double expression(const int arr[], int size, int x)
 {
     double result = 0;
-    for (int i = size; i >= 0; i--)
+    for (int i = 0; i < size; i++)
         result += (double) arr[i] * pow(x, i);
     return result;
 }
