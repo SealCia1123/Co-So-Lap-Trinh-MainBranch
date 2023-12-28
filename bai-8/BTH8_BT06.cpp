@@ -9,6 +9,8 @@
 
 using namespace std;
 
+const int MAXSIZE = 100;
+
 void swap(int &a, int &b);
 
 void nhap(int arr[], int arrSize);
@@ -23,10 +25,9 @@ void xoa(int arr[], int &arrSize, int p);
 
 int main()
 {
-    int arrSize, x, deleteIndex;
+    int arrSize, x, deleteIndex, arr[MAXSIZE];
     cout << "Nhap vao kich thuot cua mang: ";
     cin >> arrSize;
-    int arr[arrSize];
     nhap(arr, arrSize);
     xuat(arr, arrSize);
     cout << "Nhap vao gia tri can tim: ";
