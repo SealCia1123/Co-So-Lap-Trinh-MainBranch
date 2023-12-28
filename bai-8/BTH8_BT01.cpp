@@ -12,11 +12,11 @@ int main()
 {
     double alpha[50];
 
-    for (int i = 0; i < 25; i++)
-        alpha[i] = i * i;
-    for (int i = 25; i < 50; i++)
-        alpha[i] = i * i * i;
-
+    for (int i = 0, j = 25; j < 50; i++, j++)
+    {
+        alpha[i] = (double) i * i;
+        alpha[j] = (double) j * j * j;
+    }
     for (int i = 0; i < 50; i++)
     {
         if (i == 10 || i == 20 || i == 30 || i == 40)
