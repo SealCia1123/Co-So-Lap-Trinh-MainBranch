@@ -13,10 +13,12 @@ const int MAXSIZE = 100;
 int main()
 {
     srand(time(0));
-    int n;
+    int n, arr[MAXSIZE];
     cout << "Nhap vao so phan tu cua mang: ";
     cin >> n;
-    gener
+    generateRandomArr(arr, n, 0, 20);
+    printArr(arr, n);
+    statistic(arr, n);
     return 0;
 }
 
@@ -30,6 +32,7 @@ void printArr(const int arr[], int n)
 {
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
+    cout << endl;
 }
 
 void statistic(const int arr[], int n)
