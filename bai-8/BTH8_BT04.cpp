@@ -4,9 +4,9 @@ tổng và giá trị trung bình của các phần tử trong mảng.
  */
 #include <iostream>
 
-#define MAXSIZE 100
-
 using namespace std;
+
+const int MAXSIZE = 100;
 
 int main()
 {
@@ -15,11 +15,10 @@ int main()
     cin >> currentSize;
     cout << "Nhap vao gia tri cua mang: ";
     for (int i = 0; i < currentSize; i++)
+    {
         cin >> arr[i];
-
-    for (int i = 0; i < currentSize; i++)
         sumOfArray += arr[i];
-
+    }
     averageOfArray = sumOfArray / currentSize;
 
     cout << "Tong cac phan tu trong mang la: " << sumOfArray << endl;

@@ -4,9 +4,9 @@ phần tử cần xóa, xóa phần tử tại vị trí đã nhập và in ra m
  */
 #include <iostream>
 
-#define MAXSIZE 100
-
 using namespace std;
+
+const int MAXSIZE = 100;
 
 int main()
 {
@@ -16,11 +16,7 @@ int main()
     cout << "Nhap vao gia tri cua mang: ";
 
     for (int i = 0; i < currentSize; i++)
-    {
-        int temp;
-        cin >> temp;
-        arr[i] = temp;
-    }
+        cin >> arr[i];
 
     cout << "Nhap vao index can xoa: ";
     cin >> deleteIndex;
