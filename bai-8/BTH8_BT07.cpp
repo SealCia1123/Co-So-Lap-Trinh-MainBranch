@@ -1,5 +1,7 @@
 /*
- *
+ * Viết hàm trả về vị trí xuất hiện đầu tiên của phần tử nhỏ nhất trong mảng. Hàm
+nhận vào mảng số nguyên và số phần tử của mảng. Viết chương trình kiểm tra
+hàm
  */
 #include <iostream>
 
