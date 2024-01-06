@@ -46,6 +46,13 @@ int main()
     printArray(arr, size);
 }
 
+void swap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
 void generateArray(int arr[], int size)
 {
     const int MAX = 40, MIN = 20;
@@ -87,12 +94,12 @@ void speacialSort(int arr[], int size)
     int countOdd = 0;
     for (int i = 0; i < size; i++)
     {
-        // Kiem tra tu 0 -> size, neu la so chan thi swap voi so le
+        // Duyet qua mang, neu gap phai so chan thi swap voi so le
+        // Sau vong lap thi duoc mang toan so le ben trai va so chan ben phai
         if (arr[i] % 2 == 0)
         {
             for (int j = i + 1; j < size; j++)
             {
-                // Neu arr[j] la so le
                 if (arr[j] % 2 == 1)
                     swap(arr[i], arr[j]);
             }
@@ -118,9 +125,3 @@ void sort(int arr[], int start, int end)
     }
 }
 
-void swap(int &a, int &b)
-{
-    int temp = a;
-    a = b;
-    b = temp;
-}
