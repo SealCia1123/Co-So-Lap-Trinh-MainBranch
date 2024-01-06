@@ -29,12 +29,15 @@ int main()
     cout << "Nhap vao so luong phan tu cua mang: ";
     cin >> size;
     int arr[size];
+
     // Cau a
     generateArray(arr, size);
     cout << "Mang: ";
     printArray(arr, size);
+
     //Cau b
     printMaxMin(arr, size);
+
     // Cau c
     cout << "Mang truoc khi sap xep: ";
     printArray(arr, size);
