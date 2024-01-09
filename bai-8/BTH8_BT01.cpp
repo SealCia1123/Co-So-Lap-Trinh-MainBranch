@@ -11,16 +11,15 @@ using namespace std;
 int main()
 {
     double alpha[50];
-
-    for (int i = 0, j = 25; j < 50; i++, j++)
+    for (int i = 0, j = 25; j < 50; j++, i++)
     {
-        alpha[i] = (double) i * i;
-        alpha[j] = (double) j * j * j;
+        alpha[i] = i * i;
+        alpha[j] = j * j * j;
     }
     for (int i = 0; i < 50; i++)
     {
         if (i == 10 || i == 20 || i == 30 || i == 40)
-            cout << endl;
+            cout << "\n";
         cout << alpha[i] << " ";
     }
     return 0;

@@ -17,11 +17,26 @@ int main()
 int sumOfDigit(int n)
 {
     int sum = 0;
-    while (n)
+    if (n >= 0)
     {
-        sum += n % 10;
-        n /= 10;
+        while (n)
+        {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
     }
-    return sum;
+    else
+    {
+        n *= -1;
+        while (n > 9)
+        {
+            sum += n % 10;
+            n /= 10;
+        }
+        n *= -1;
+        sum += n;
+        return sum;
+    }
 }
  
