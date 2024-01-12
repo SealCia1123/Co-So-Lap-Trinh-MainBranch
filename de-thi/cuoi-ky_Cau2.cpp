@@ -16,6 +16,14 @@ bool ktBoiSo3(int n);
 
 int count(const int arr[], int n);
 
+void mySwap(int &a, int &b);
+
+void mySort(int arr[], int n);
+
+void xepTangDan(int arr[], int start, int end);
+
+void xepGiamDan(int arr[], int start, int end);
+
 const int MAX_SIZE = 100;
 
 int main()
@@ -25,6 +33,18 @@ int main()
     cout << "Nhap kich thuoc cua mang: ";
     cin >> n;
     generateArr(arr, n, 1, 99);
+    // Cau a
+    cout << "Mang: ";
+    printArr(arr, n);
+
+    // Cau b
+    cout << "So luong boi so cua 3 trong mang: " << count(arr, n) << endl;
+
+    // Cau c
+    cout << "Mang ban dau: ";
+    printArr(arr, n);
+    cout << "Mang sau khi sap xep: ";
+    mySort(arr, n);
     printArr(arr, n);
     return 0;
 }
@@ -66,5 +86,57 @@ int count(const int arr[], int n)
     {
         if (ktBoiSo3(arr[i]))
             count++;
+    }
+    return count;
+}
+
+void mySwap(int &a, int &b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+void mySort(int arr[], int n)
+{
+    int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (!ktBoiSo3(arr[i]))
+        {
+            for (int j = i + 1; j < n; j++)
+            {
+                if (ktBoiSo3(arr[j]))
+                    mySwap(arr[i], arr[j]);
+            }
+        }
+        if (ktBoiSo3(arr[i]))
+            count++;
+    }
+    xepGiamDan(arr, 0, count);
+    xepTangDan(arr, count, n);
+}
+
+void xepTangDan(int arr[], int start, int end)
+{
+    for (int i = start; i < end - 1; i++)
+    {
+        for (int j = i + 1; j < end; j++)
+        {
+            if (arr[i] > arr[j])
+                mySwap(arr[i], arr[j]);
+        }
+    }
+}
+
+void xepGiamDan(int arr[], int start, int end)
+{
+    for (int i = start; i < end - 1; i++)
+    {
+        for (int j = i + 1; j < end; j++)
+        {
+            if (arr[i] < arr[j])
+                mySwap(arr[i], arr[j]);
+        }
     }
 }
